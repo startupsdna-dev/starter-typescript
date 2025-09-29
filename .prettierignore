@@ -1,0 +1,13 @@
+# dependencies
+/node_modules
+pnpm-lock.yaml
+
+# production
+/build
+/dist
+/out/
+*.tsbuildinfo
+
+# tools
+.vercel
+.turbo

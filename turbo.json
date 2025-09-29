@@ -1,0 +1,15 @@
+{
+  "$schema": "https://turborepo.com/schema.json",
+  "ui": "tui",
+  "tasks": {
+    "build": {
+      "inputs": ["$TURBO_DEFAULT$", ".env*"]
+    },
+    "lint": {},
+    "check-types": {},
+    "dev": {
+      "cache": false,
+      "persistent": true
+    }
+  }
+}
