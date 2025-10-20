@@ -2,7 +2,7 @@
   "name": "backend-starter",
   "private": true,
   "scripts": {
-    "dev": "tsx watch --conditions=dev app/main.ts",
+    "dev": "tsx watch app/main.ts",
     "build": "tsc -p tsconfig.build.json",
     "check-types": "tsc --noEmit && echo 'Type check passed!'",
     "format": "prettier --write --list-different .",
