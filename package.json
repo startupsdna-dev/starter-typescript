@@ -1,21 +1,24 @@
 {
-  "name": "backend-starter",
+  "name": "starter-typescript",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "tsx watch app/main.ts",
-    "build": "tsc -p tsconfig.build.json",
+    "build": "tsc -p tsconfig.build.json && tsc-alias --resolve-full-paths -p tsconfig.build.json",
     "check-types": "tsc --noEmit && echo 'Type check passed!'",
     "format": "prettier --write --list-different .",
     "format:check": "prettier --check .",
     "lint": "eslint --fix",
     "lint:check": "eslint"
   },
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "^22.15.30",
     "eslint": "^9.36.0",
     "eslint-import-resolver-typescript": "^4.4.0",
     "eslint-plugin-import": "^2.32.0",
     "prettier": "^3.6.0",
+    "tsc-alias": "^1.8.16",
     "tsconfig-paths": "^4.2.0",
     "tsx": "^4.20.6",
     "turbo": "^2.5.4",
